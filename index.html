@@ -1,1 +1,213 @@
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ReneTirado14/lbannana@3ad5bf7eab1a47660acd8fbe0c24d1119c7a0b6d/html/slope/TemplateData/style.css"> <script src="https://cdn.jsdelivr.net/gh/ReneTirado14/lbannana@3ad5bf7eab1a47660acd8fbe0c24d1119c7a0b6d/html/slope/TemplateData/UnityProgress.js"></script> <script src="https://cdn.jsdelivr.net/gh/ReneTirado14/lbannana@3ad5bf7eab1a47660acd8fbe0c24d1119c7a0b6d/html/slope/TemplateData/unityloader41.js"></script> <script> var gameInstance = UnityLoader.instantiate("gameContainer", "https://cdn.jsdelivr.net/gh/ReneTirado14/lbannana@3ad5bf7eab1a47660acd8fbe0c24d1119c7a0b6d/html/slope/Build/slope.json", {onProgress: UnityProgress,Module:{onRuntimeInitialized: function() {UnityProgress(gameInstance, "complete")}}}); </script> <script src="https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/addc4348-16c2-4645-9dff-f99b962e39ef%2Fscr.js"></script> <div class="webgl-content"> <div id="gameContainer" style="width: 100vw; height: 100vh"></div> </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destroyed12121's Unblocked Games</title>
+  <style>
+    body {
+      background: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      overflow: hidden;
+      margin: 0;
+    }
+
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: radial-gradient(ellipse at center, #000000, #0a0a0a, #111111, #1a1a1a, #222222);
+    }
+
+    .dot {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: white;
+      animation: moveDot 5s linear infinite;
+    }
+
+    @keyframes moveDot {
+      0% { transform: translate(50vw, 50vh) scale(1); }
+      100% { transform: translate(-50vw, -50vh) scale(0); }
+    }
+
+    h1 {
+      margin-top: 50px; /* Adjust title position */
+    }
+
+    .game-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .game {
+      width: 120px;
+      text-align: center;
+    }
+
+    .game img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .game a {
+      color: white;
+      text-decoration: none;
+    }
+
+    /* Button Styling */
+    .changelog-tab, .other-tab {
+      position: fixed;
+      bottom: 10px;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      z-index: 10;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .changelog-tab {
+      left: 10px;
+    }
+
+    .other-tab {
+      left: 130px; /* Position next to Changelog tab */
+    }
+
+    .changelog-tab:hover, .other-tab:hover {
+      background-color: white;
+      color: black;
+    }
+
+    /* Changelog Content Styling */
+    .changelog-content {
+      position: fixed;
+      bottom: 60px;
+      left: 10px;
+      background-color: rgba(0, 0, 0, 0.9);
+      color: white;
+      font-size: 14px;
+      padding: 15px;
+      width: 250px;
+      height: 200px; /* Increased height */
+      border-radius: 10px;
+      display: none;
+      z-index: 10;
+      overflow-y: auto; /* Enable scrolling */
+    }
+
+    .changelog-content ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .changelog-content li {
+      margin-bottom: 10px; /* Added more spacing between changelogs */
+    }
+  </style>
+</head>
+<body>
+  <div class="background"></div>
+  
+  <script>
+    // Add 100 animated dots to the background
+    for (let i = 0; i < 100; i++) {
+      const dot = document.createElement('div');
+      dot.className = 'dot';
+      dot.style.left = Math.random() * 100 + 'vw';
+      dot.style.top = Math.random() * 100 + 'vh';
+      dot.style.animationDuration = 2 + Math.random() * 5 + 's';
+      document.querySelector('.background').appendChild(dot);
+    }
+  </script>
+
+  <h1>Destroyed12121's Unblocked Games</h1>
+
+  <div class="game-list">
+    <!-- Row 1 -->
+    <div class="row">
+      <!-- Game 1 -->
+      <div class="game">
+        <a href="games/1v1.lol.html">
+          <img src="pictures/1v1.lol.webp" alt="1v1.lol">
+          <p>1v1.lol</p>
+        </a>
+      </div>
+      <!-- Game 2 -->
+      <div class="game">
+        <a href="games/Retro Bowl.html">
+          <img src="pictures/retrobowl picture.webp" alt="Retro Bowl">
+          <p>Retro Bowl</p>
+        </a>
+      </div>
+      <!-- Game 3-8 (Placeholders) -->
+      <div class="game"><a href="games/slope.html"><img src="pictures/slope.webp" alt="Slope"><p>Slope</p></a></div>
+      <div class="game"><a href="games/buildnow.html"><img src="pictures/buildnow.webp" alt="BuildNow.gg"><p>BuildNow</p></a></div>
+      <div class="game"><a href="#"><img src="https://via.placeholder.com/120" alt="Placeholder"><p>Game 5</p></a></div>
+      <div class="game"><a href="#"><img src="https://via.placeholder.com/120" alt="Placeholder"><p>Game 6</p></a></div>
+      <div class="game"><a href="#"><img src="https://via.placeholder.com/120" alt="Placeholder"><p>Game 7</p></a></div>
+      <div class="game"><a href="#"><img src="https://via.placeholder.com/120" alt="Placeholder"><p>Game 8</p></a></div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="row">
+      <!-- Game 9-16 (Placeholders) -->
+      <div class="game"><a href="#"><img src="https://via.placeholder.com/120" alt="Placeholder"><p>Game 9</p></a></div>
+      <div class="game"><a href="#"><img src="https://via.placeholder.com/120" alt="Placeholder"><p>Game 10</p></a></div>
+      <div class="game"><a href="#"><img src="https://via.placeholder.com/120" alt="Placeholder"><p>Game 11</p></a></div>
+      <div class="game"><a href="#"><img src="https://via.placeholder.com/120" alt="Placeholder"><p>Game 12</p></a></div>
+      <div class="game"><a href="#"><img src="https://via.placeholder.com/120" alt="Placeholder"><p>Game 13</p></a></div>
+      <div class="game"><a href="#"><img src="https://via.placeholder.com/120" alt="Placeholder"><p>Game 14</p></a></div>
+      <div class="game"><a href="#"><img src="https://via.placeholder.com/120" alt="Placeholder"><p>Game 15</p></a></div>
+      <div class="game"><a href="#"><img src="https://via.placeholder.com/120" alt="Placeholder"><p>Game 16</p></a></div>
+    </div>
+  </div>
+
+  <!-- Changelog Tab -->
+  <div class="changelog-tab" onclick="toggleChangelog()">Changelog</div>
+
+  <!-- Other Tab -->
+  <a href="other/other.html" class="other-tab">Other</a>
+
+  <!-- Changelog Content -->
+  <div class="changelog-content" id="changelog-content">
+    <strong>Changelog:</strong>
+    <ul>
+      <li>Spent all day making this site after school</li>
+      <li>Finally figured out how to add Retro Bowl and 1v1.lol</li>
+      <li>Date of creation: 1/16/25</li>
+      <li>Added placeholder games to the list</li>
+      <li>Improved the changelog display with a larger scrollable window</li>
+      <li>Fixed alignment issues for the game rows</li>
+    </ul>
+  </div>
+
+  <script>
+    function toggleChangelog() {
+      const content = document.getElementById('changelog-content');
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>
